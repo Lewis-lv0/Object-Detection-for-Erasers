@@ -1,0 +1,46 @@
+{
+  "version": "4.5.9",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "eraser",
+      "points": [
+        [
+          174.5,
+          232.5
+        ],
+        [
+          169.5,
+          287.5
+        ],
+        [
+          169.5,
+          572.5
+        ],
+        [
+          635.5,
+          572.5
+        ],
+        [
+          644.0,
+          561.5
+        ],
+        [
+          649.5,
+          271.5
+        ],
+        [
+          632.0,
+          229.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "..\\raw imgs\\00040.jpg",
+  "imageData": null,
+  "imageHeight": 800,
+  "imageWidth": 800
+}

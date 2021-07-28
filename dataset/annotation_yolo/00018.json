@@ -1,0 +1,26 @@
+{
+  "version": "4.5.9",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "eraser",
+      "points": [
+        [
+          1414.6470588235293,
+          948.764705882353
+        ],
+        [
+          3097.0,
+          2087.9803921568628
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "..\\raw imgs\\00018.jpg",
+  "imageData": null,
+  "imageHeight": 3023,
+  "imageWidth": 4528
+}
