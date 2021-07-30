@@ -109,13 +109,21 @@ class yolo_tool():
     Copy all labeled Image to new folder
     '''
     def copyAllLabeledImageToNewFolder(self, imagePathList, saveFolder):
+        # make dir if not exist
+        if not os.path.exists(saveFolder):
+            os.makedirs(saveFolder)
+        # copy files
         for item in imagePathList:
             _, imageName = os.path.split(item)
             savePath = os.path.join(saveFolder, imageName)
             print("copyAllLabeledImageToNewFolder: srcPath", item)
-            print("copyAllLabeledImageToNewFolder: dstPath", savePath)
-            shutil.copyfile(item, savePath)
-
+            print("copyAllLabeledImageToNewFolder: dstPath", savePath, '\n')
+            try:
+                shutil.copyfile(item, savePath)
+            except:
+                print('fail to copy %s'%item)
+        # finish        
+        print('-----------------Finish---------------------')
 
     '''
     rename all raw images and txt annotations
