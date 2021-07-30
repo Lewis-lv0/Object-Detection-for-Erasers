@@ -1,15 +1,27 @@
 '''
 Reference: https://www.jianshu.com/p/574755718e51
-
 Revised by Yixing:
 1. modify functions for my preferences
 2. fix bugs in imageAugment_flip() and showLabelFromTxt()
 3. add comments
 
 #####################################
-Many utility function:
-managing dataset (visualization etc.)
-data augmentation
+Many utility functions:
+1 managing dataset
+- getAllImagePath()
+- getAllJsonFilePath()
+- getAllTxtPath()
+- fromJsonFileToSearchImage()
+- copyAllLabeledImageToNewFolder() -> copy data from one data to another
+- renameAllLabeledImageAndTxt() -> rename files
+- changeLabelFromJsonToTxt -> specific for yolo
+- showLabelFromJson()-> visualize
+- showLabelFromTxt() -> visualize
+
+2 data augmentation
+- blur
+- three ways of flipping
+- gamma transform
 #####################################
 '''
 
@@ -98,7 +110,7 @@ class yolo_tool():
     '''
     def copyAllLabeledImageToNewFolder(self, imagePathList, saveFolder):
         for item in imagePathList:
-            imageName = item.rsplit("\\",1)[-1]
+            _, imageName = os.path.split(item)
             savePath = os.path.join(saveFolder, imageName)
             print("copyAllLabeledImageToNewFolder: srcPath", item)
             print("copyAllLabeledImageToNewFolder: dstPath", savePath)
@@ -253,7 +265,6 @@ class yolo_tool():
 
     '''
     flip images
-
     Usage:
     flag = 0    水平翻转 
     flag = 1    竖直翻转, 
