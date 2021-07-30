@@ -3,7 +3,7 @@ Reference: https://www.jianshu.com/p/574755718e51
 
 Revised by Yixing:
 1. modify functions for my preferences
-2. fix bugs in imageAugment_flip() and 
+2. fix bugs in imageAugment_flip() and showLabelFromTxt()
 3. add comments
 
 #####################################
