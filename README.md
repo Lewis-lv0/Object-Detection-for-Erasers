@@ -1,5 +1,6 @@
 # Object-Detection-for-Erasers
 Object Detection by YOLO-v5
+- Update (12.8): delete YOLOv5 model from this repo and ready for open source
 - Update (7.30): add info about project environment 
 
   ```bash
